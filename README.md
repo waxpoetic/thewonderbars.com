@@ -1,7 +1,9 @@
-# wonderbars
+# TheWonderBars.com
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Official site of The Wonder Bars, a live house music band from
+Philadelphia. Contains an extensive artist bio, audio and video clips,
+an image gallery, and live tour dates. Pulls all information from the
+[Wax Poetic API](https://github.com/waxpoetic/api).
 
 ## Prerequisites
 

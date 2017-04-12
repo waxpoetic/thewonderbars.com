@@ -1,0 +1,6 @@
+section.home-page__title
+  h1 We Are The Wonder Bars
+  h2 A live house music experiment
+
+section.home-page__slideshow
+  / TODO: Images
