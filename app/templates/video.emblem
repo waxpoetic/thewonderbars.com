@@ -1,0 +1,5 @@
+h1 Video
+
+p Check out some of our live video
+
+%youtube-playlist id=artist.youtubePlaylistID

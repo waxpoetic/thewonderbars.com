@@ -1,0 +1,4 @@
+h1. Tour Dates
+
+each event in events
+  %event-summary event=event

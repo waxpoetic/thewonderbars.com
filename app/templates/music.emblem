@@ -1,0 +1,4 @@
+h1 Music
+
+each song in songs
+  %song-player song=song

@@ -10,7 +10,7 @@ Router.map(function() {
   this.route('about');
   this.route('music');
   this.route('video');
-  this.route('live');
+  this.route('tour');
 });
 
 export default Router;
