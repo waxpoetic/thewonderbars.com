@@ -1,3 +1,5 @@
-h1 About Us
-
-= artist.description
+.about
+  section.about__title
+    h1 About Us
+  section.about__description
+    = artist.description

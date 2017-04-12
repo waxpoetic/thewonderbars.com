@@ -1,4 +1,6 @@
-h1. Tour Dates
-
-each event in events
-  %event-summary event=event
+.tour
+  header.tour__title
+    h1 Tour Dates
+  section.tour__schedule
+    each event in events
+      %event-summary event=event

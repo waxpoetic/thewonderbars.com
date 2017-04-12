@@ -1,5 +1,7 @@
-h1 Video
-
-p Check out some of our live video
-
-%youtube-playlist id=artist.youtubePlaylistID
+.video
+  header.video__title
+    h1 Video
+  section.video__description
+    p Check out some of our live video
+  section.video__playlist
+    %youtube-playlist id=artist.youtubePlaylistID

@@ -1,4 +1,6 @@
-h1 Music
-
-each song in songs
-  %song-player song=song
+.music
+  section.music__title
+    h1 Music
+  section.music__songs
+    each song in songs
+      %song-player song=song
