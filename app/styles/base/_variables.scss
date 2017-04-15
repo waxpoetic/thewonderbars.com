@@ -3,6 +3,7 @@ $medium-screen: 600px;
 $large-screen: 900px;
 
 // Typography
+$font-stack-system: Helvetica, sans-serif;
 $base-font-family: $font-stack-system;
 $heading-font-family: $base-font-family;
 
@@ -44,3 +45,9 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+// Grid
+$neat-grid: (
+  columns: 12,
+  gutter: 20px,
+);

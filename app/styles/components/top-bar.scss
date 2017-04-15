@@ -1,0 +1,9 @@
+.top-bar {
+  @include grid-container;
+}
+  .top-bar__logo {
+    @include grid-column(4);
+  }
+  .top-bar__navigation {
+    @include grid-column(8);
+  }

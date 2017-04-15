@@ -1,12 +1,12 @@
 header.top-bar
   .top-bar__logo
-    img src="wonderbars.png" alt="The Wonder Bars"
+    img src="wonderbars.jpg" alt="The Wonder Bars" height="100" width="100"
   .top-bar__navigation
     nav.navigation
-      = link_to 'Music' 'music' class="navigation__link"
-      = link_to 'Video' 'video' class="navigation__link"
-      = link_to 'Live'  'tour'  class="navigation__link"
-      = link_to 'About' 'about' class="navigation__link"
+      = link-to 'Music' 'music' class="navigation--link"
+      = link-to 'Video' 'video' class="navigation--link"
+      = link-to 'Live'  'tour'  class="navigation--link"
+      = link-to 'About' 'about' class="navigation--link"
 main.content
   = outlet
 footer.bottom-bar
