@@ -3,4 +3,6 @@ section.home-page__title
   h2 A live house music experiment
 
 section.home-page__slideshow
-  / TODO: Images
+  ul.slideshow#home-page-slideshow
+    each image in controller
+      = slideshow-image image=image
