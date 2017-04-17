@@ -5,5 +5,8 @@ section.home-page__title
 section.home-page__slideshow
   ul.slideshow#home-page-slideshow
     each image in controller
-      = slideshow-image image=image
-        p= caption
+      li.slideshow__slide.slide
+          section.slide__image
+            img src="#{image.url}"
+          section.slide__caption
+            p= image.caption
