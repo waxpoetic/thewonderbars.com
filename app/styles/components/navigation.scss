@@ -1,0 +1,16 @@
+.navigation {
+  @include grid-container;
+}
+
+  .navigation__link {
+    @include grid-column(3);
+    text-align: center;
+    text-transform: uppercase;
+    color: darken(red, 10%);
+    font-weight: bold;
+    transition: color 0.5s $base-timing;
+
+    &:hover {
+      color: black;
+    }
+  }

@@ -1082,7 +1082,7 @@ broccoli-config-replace@^1.1.2:
     debug "^2.2.0"
     fs-extra "^0.24.0"
 
-broccoli-file-creator@^1.0.0:
+broccoli-file-creator@^1.0.0, broccoli-file-creator@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/broccoli-file-creator/-/broccoli-file-creator-1.1.1.tgz#1b35b67d215abdfadd8d49eeb69493c39e6c3450"
   dependencies:
@@ -2133,9 +2133,8 @@ ember-cli-version-checker@^1.0.2, ember-cli-version-checker@^1.1.4, ember-cli-ve
   dependencies:
     semver "^5.3.0"
 
-ember-cli-waxpoetic@waxpoetic/ember-cli-waxpoetic:
+ember-cli-waxpoetic@../addon:
   version "0.0.2"
-  resolved "https://codeload.github.com/waxpoetic/ember-cli-waxpoetic/tar.gz/56237da8443e98586aa989712ac9126cb8b8915f"
   dependencies:
     ember-cli-babel "^5.1.7"
     ember-cli-emblem "0.8.2-beta.2"
@@ -2262,6 +2261,13 @@ ember-export-application-global@^1.0.5:
   resolved "https://registry.yarnpkg.com/ember-export-application-global/-/ember-export-application-global-1.1.1.tgz#f257d5271268932a89d7392679ce4db89d7154af"
   dependencies:
     ember-cli-babel "^5.1.10"
+
+ember-get-config@0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/ember-get-config/-/ember-get-config-0.2.1.tgz#a1325cceefcb4534c78fc6ccb2be87a3feda6817"
+  dependencies:
+    broccoli-file-creator "^1.1.1"
+    ember-cli-babel "^5.1.6"
 
 ember-inflector@^1.9.4:
   version "1.11.0"
