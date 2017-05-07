@@ -9,7 +9,7 @@ header.top-bar
       = link-to 'Live'  'tour'  class="navigation__link"
       = link-to 'About' 'about' class="navigation__link"
 main.content
-  = outlet
+  = liquid-outlet
 / footer.bottom-bar
 /   .bottom-bar__copyright
 /     p Copyright 2017 Wax Poetic Records, LLC.
