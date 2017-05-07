@@ -4,3 +4,5 @@
   section.tour__schedule
     each event in events
       %event-summary event=event
+    else
+      p No new events posted, check back for more updates!

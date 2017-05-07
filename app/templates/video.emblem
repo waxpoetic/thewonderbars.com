@@ -1,7 +1,8 @@
 .video.page
   header.page__title
     h1 Live Video
-  section.video__description
-    p Check out some of our live video
   section.video__playlist
-    %youtube-playlist id=artist.youtubePlaylistID
+    if playlistID
+      %youtube-playlist list=playlistID video=startingVideoID
+    else
+      p Check back for more live video when we upload it!

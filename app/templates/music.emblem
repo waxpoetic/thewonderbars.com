@@ -3,4 +3,6 @@
     h1 Our Music
   section.music__songs
     each song in songs
-      %song-player song=song
+      %soundcloud-player song=song
+    else
+      p We don't have any music uploaded at the moment. Check back soon!
