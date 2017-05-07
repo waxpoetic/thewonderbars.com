@@ -1,6 +1,62 @@
+/**
+ * CONTENTS
+ *
+ * TOOLS
+ * Bourbon................Useful mixins
+ * Neat...................Grid framework
+ */
 @import "bourbon";
 @import "neat";
-@import "base/base";
+
+/**
+ * SETTINGS
+ * Variables..............Global configuration
+ */
+@import "settings/variables";
+
+/**
+ * GENERIC (N/A)
+ */
+
+/**
+ * BASE
+ * Buttons................Button styles
+ * Forms..................Basic form design
+ * Layout.................Layout for all pages
+ * Lists..................Unordered and ordered lists
+ * Media..................Video and audio playback, as well as images
+ * Tables.................Displaying tabular data
+ * Typography.............Headings, font size, line height, and kerning
+ */
+@import "base/buttons";
+@import "base/forms";
+@import "base/layout";
+@import "base/lists";
+@import "base/media";
+@import "base/tables";
+@import "base/typography";
+
+/**
+ * OBJECTS
+ *
+ * Page...................Content of each page
+ */
+@import "objects/page";
+
+/**
+ * COMPONENTS
+ * Top Bar................Header bar for the application
+ * Navigation.............Main navigation menu
+ * Loading................Spinner for loading substate
+ * Error..................Error pop-up
+ * Content Page...........Most pages in the application
+ * Home Page..............Slideshow on the homepage
+ */
+@import "components/loading";
 @import "components/top-bar";
 @import "components/navigation";
 @import "components/home-page";
+
+/**
+ * TRUMPS (N/A)
+ */

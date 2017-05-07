@@ -1,5 +1,5 @@
-.about
-  section.about__title
+.about.page
+  section.page__title
     h1 About Us
-  section.about__description
+  section.page__content
     = bio

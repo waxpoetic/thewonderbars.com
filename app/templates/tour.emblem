@@ -1,5 +1,5 @@
-.tour
-  header.tour__title
+.tour.page
+  header.page__title
     h1 Tour Dates
   section.tour__schedule
     each event in events

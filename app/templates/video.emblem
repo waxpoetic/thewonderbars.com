@@ -1,6 +1,6 @@
-.video
-  header.video__title
-    h1 Video
+.video.page
+  header.page__title
+    h1 Live Video
   section.video__description
     p Check out some of our live video
   section.video__playlist

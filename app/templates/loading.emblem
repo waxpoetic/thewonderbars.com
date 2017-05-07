@@ -1,0 +1,5 @@
+.loading
+  section.loading__icon
+    = fa-icon 'spin'
+  section.loading__text
+    h3 Loading...

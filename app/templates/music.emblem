@@ -1,6 +1,6 @@
-.music
-  section.music__title
-    h1 Music
+.music.page
+  section.page__title
+    h1 Our Music
   section.music__songs
     each song in songs
       %song-player song=song
