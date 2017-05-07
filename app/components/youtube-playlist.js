@@ -7,7 +7,7 @@ export default Ember.Component.extend({
   height: 315,
   frameborder: 0,
   allowfullscreen: true,
-  src: Ember.computed('video, playlist', function() {
+  src: Ember.computed('video,playlist', function() {
     let video = this.get('video');
     let list = this.get('list');
 

@@ -1,7 +1,8 @@
 .page.home-page
   section.home-page__title
     h1 We Are The Wonder Bars
-    h2 A live house music experiment
+    h2 We Are Live House Music
+    h3 We Are Philadelphia
 
   section.home-page__slideshow
     ul.slideshow#home-page-slideshow
