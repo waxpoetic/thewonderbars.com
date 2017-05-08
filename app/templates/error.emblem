@@ -1,5 +1,6 @@
 .error
   .error__title
-    h1 Error loading TheWonderBars.com
+    h1 There was a problem loading the site
+    h2 Please check back later!
   .error__content
     = yield
