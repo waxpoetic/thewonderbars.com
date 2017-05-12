@@ -1,12 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  playlistID: Ember.computed('model.youtubePlaylistId', function() {
-    return this.get('model.youtubePlaylistId');
-  }),
+  playlist: Ember.computed('model.youtubePlaylistId,model.startingYoutubeVideoId', function() {
+    let video = this.get('model.startingYoutubeVideoId');
+    let list = this.get('model.youtubePlaylistId');
 
-
-  startingVideoID: Ember.computed('model.startingYoutubeVideoId', function() {
-    return this.get('model.startingYoutubeVideoId');
+    return `https://www.youtube.com/embed/${video}?list=${list}`;
   }),
 });

@@ -2,7 +2,4 @@
   header.page__title
     h1 Live Video
   section.video__playlist
-    if playlistID
-      %youtube-playlist list=playlistID video=startingVideoID
-    else
-      p Check back for more live video when we upload it!
+    iframe src="https://www.youtube.com/embed/videoseries?list=PLrgQrlMuJEdmIMgGCKInFVWzpAUEO3apc" frameborder="0" allowfullscreen="allowfullscreen"

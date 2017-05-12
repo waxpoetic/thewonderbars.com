@@ -1,0 +1,9 @@
+.video {}
+  .video__playlist {
+    min-height: 800px;
+
+    iframe {
+      height: 640px;
+      width: 100%;
+    }
+  }
