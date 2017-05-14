@@ -10,5 +10,7 @@
           .event__time= moment-format event.startsAt 'h:mm a'
         .event__info
           a href="#{event.facebookUrl}"
-            h3.event__name= event.name
-          p.event__location @ #{event.location}
+            .event__image
+              img src="#{event.image}"
+            .event__description
+              h3 #{event.name} @ #{event.location}
