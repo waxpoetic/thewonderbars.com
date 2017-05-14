@@ -12,7 +12,7 @@ before_install:
 - bower --version
 - phantomjs --version
 install:
-- npm install
+- yarn install
 - bower install
 script:
 - ember test
