@@ -3,6 +3,7 @@
     h1 Our Music
   section.music__songs
     each model as |song|
-      %soundcloud-player song=song
-    else
-      p We don't have any music uploaded at the moment. Check back soon!
+      .song
+        p= song.name
+        audio controls="controls"
+          source src="#{song.preview}"

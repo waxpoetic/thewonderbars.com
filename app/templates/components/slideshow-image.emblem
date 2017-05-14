@@ -1,4 +1,2 @@
-section.slideshow__image
-  img src=url
-section.slideshow__caption
+.slideshow__caption
   = yield
