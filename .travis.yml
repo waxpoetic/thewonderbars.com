@@ -20,6 +20,7 @@ script:
 before_deploy:
 - npm build
 deploy:
+  skip_cleanup: true
   provider: s3
   access_key_id: AKIAJ5ZO3H5WVLLW7MMA
   secret_access_key:
