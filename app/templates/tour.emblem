@@ -2,7 +2,13 @@
   header.page__title
     h1 Tour Dates
   section.tour__schedule
-    each event in events
-      %event-summary event=event
-    else
-      p No new events posted, check back for more updates!
+    each model as |event|
+      .event
+        .event__date
+          .event__month= moment-format event.startsAt 'MMMM'
+          .event__day= moment-format event.startsAt 'D'
+          .event__time= moment-format event.startsAt 'h:mm a'
+        .event__info
+          a href="#{event.facebookUrl}"
+            h3.event__name= event.name
+          p.event__location @ #{event.location}

@@ -1,14 +1,10 @@
 .page.home-page
-  section.home-page__title
-    h1 We Are The Wonder Bars
-    h2 We Are Live House Music
-    h3 We Are Philadelphia
-
   section.home-page__slideshow
     ul.slideshow#home-page-slideshow
-      each images as |image|
-        li.slideshow__slide.slide
-            section.slide__image
-              img src="#{image.url}"
-            section.slide__caption
-              p= image.caption
+      = slick-slider autoplay=true arrows=true
+        each model as |image|
+          li.slideshow__slide.slide
+              section.slide__image
+                img src="#{image.file}"
+              section.slide__caption
+                h2= image.caption

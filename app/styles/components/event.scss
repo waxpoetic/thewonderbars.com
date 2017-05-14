@@ -1,0 +1,19 @@
+.event {
+  @include grid-container;
+}
+
+  .event__date {
+    @include grid-column(2);
+    text-align: center;
+  }
+    .event__month, .event__time, .event__location {
+      text-transform: uppercase;
+    }
+
+    .event__day {
+      font-size: 3rem;
+    }
+
+  .event__info {
+    @include grid-column(10);
+  }
