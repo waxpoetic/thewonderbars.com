@@ -8,16 +8,16 @@ cache:
   - "$HOME/.cache"
 before_install:
 - npm config set spin false
-- npm install -g bower phantomjs-prebuilt
+- npm install -g bower phantomjs-prebuilt ember-cli
 - bower --version
 - phantomjs --version
 install:
 - npm install
 - bower install
 script:
-- npm test
+- ember test
 before_deploy:
-- npm build
+- ember build --environment=production
 deploy:
   skip_cleanup: true
   provider: s3
