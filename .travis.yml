@@ -1,24 +1,29 @@
----
 language: node_js
 node_js:
-  - "6"
-
+- '6'
 sudo: false
-
 cache:
   directories:
-    - $HOME/.npm
-    - $HOME/.cache # includes bowers cache
-
+  - "$HOME/.npm"
+  - "$HOME/.cache"
 before_install:
-  - npm config set spin false
-  - npm install -g bower phantomjs-prebuilt
-  - bower --version
-  - phantomjs --version
-
+- npm config set spin false
+- npm install -g bower phantomjs-prebuilt
+- bower --version
+- phantomjs --version
 install:
-  - npm install
-  - bower install
-
+- npm install
+- bower install
 script:
-  - npm test
+- npm test
+deploy:
+  provider: s3
+  access_key_id: AKIAJ5ZO3H5WVLLW7MMA
+  secret_access_key:
+    secure: L4sW893sDvDHzYd8BzVl3ap6JkAVQHWgm0pIuE6DOTZ1g/nLksxlDhzTpD64HcTS+dSbPSFiUyvNS1QHsV8tqQvGpAGEHZ5MZihXQF4iBWwjcuPBz7vAbxlaS81bHkF3mfdLszgCs4PrshPsLeuRMqr6eba73SxbV0/8fdHRzm7cs/WNO6w1OvosN08CyD9dx71pSgn4AvGmBeGzWlxJ7fcnHIltN6eYUJ51HpJDGUVjyhVKrNZ8JWNNubgEB2Hxl2AGXPTa7nvo8aICApmjA1Rkau3rFPTHRJq7xw7/kUlZXRWA3wVzWb30Ybt+ncg6c4GyGoAjHNMD4CykbOz7CmatfLY4R6EP1mpWYW01xaiEqE/Qmy/jSu9GWno8wxoGoAwDnqbceKYXax537Qn+9uo/tByHNUC7QfPU1k3ctRPi6gSyKkPrnIaoiKry7v1mGpFiJZ9aXvmHRV6S5K6RnBvsaqU4oPRw/QI21C7rO+aDlsFWFAVKhj4CBhABS4Ez597HsdKbrLRSnAkgzvDssuztrOfyJhz2tItGgpf6fFSxmvauIJcS0WR4gdDpt06bmrQEy5WZKxnTC9OKqOLjQ5AsogigJpaHTrBJKDcb4ZI9E38UvAt5v2NSUB2xmUl9wsQQYEvB9f3QbPMHie8GbVorDJcrdneXi6fgTMBmf/4=
+  bucket: thewonderbars.com
+  local-dir: dist
+  acl: public_read
+  on:
+    repo: waxpoetic/thewonderbars.com
+    branch: master
