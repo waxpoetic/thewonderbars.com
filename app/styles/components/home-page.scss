@@ -2,19 +2,8 @@
   .home-page__title {}
   .home-page__slideshow {}
 
-.slideshow {
-  max-height: 640px;
-}
-
-  .slideshow__slide {
-    min-height: 640px;
-  }
-
-.slick-arrow {
-  background: #222;
-  border-radius: 15px;
-
-  &:hover {
-    background: black;
-  }
+.content {
+  min-height: 640px;
+  transition: background-image .25s ease-in-out;
+  background-repeat: no-repeat;
 }

@@ -9,13 +9,11 @@ export default Ember.Route.extend({
     }
   },
 
-  // Slideshow images
-  images: Ember.computed('store', function() {
-    return this.get('store').findAll('image');
-  }),
-
   setupController(controller, model) {
     controller.set('model', model);
-    controller.set('images', this.get('images'));
+    // this.get('store').findAll('image').then(function(images) {
+    //   let imageURLs = images.map((image) => image.get('file'));
+    //   controller.set('images', imageURLs);
+    // });
   }
 });
