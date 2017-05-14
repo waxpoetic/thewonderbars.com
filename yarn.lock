@@ -2178,9 +2178,9 @@ ember-cli-version-checker@^1.0.2, ember-cli-version-checker@^1.1.4, ember-cli-ve
   dependencies:
     semver "^5.3.0"
 
-ember-cli-waxpoetic@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/ember-cli-waxpoetic/-/ember-cli-waxpoetic-0.0.3.tgz#63a87579c6db71f5afc6e5bde143ee939934deef"
+ember-cli-waxpoetic@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/ember-cli-waxpoetic/-/ember-cli-waxpoetic-0.0.4.tgz#63a5a773831f53c88b66dc9ebadc8a8834cf3156"
   dependencies:
     ember-cli-babel "^5.1.7"
     ember-cli-emblem "^0.9.0"
