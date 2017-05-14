@@ -1,6 +1,9 @@
 .page.home-page
   .slideshow
-    slick-slider autoplay=true arrows=true
+    slick-slider autoplay=true autoplaySpeed=5000 dots=true infinite=true speed=500 fade=true cssEase='linear'
       each model as |image|
-        slideshow-image src=image.file
-          p= image.caption
+        if image.caption
+          slideshow-image src=image.file
+            h1 image.caption
+        else
+          slideshow-image src=image.file
