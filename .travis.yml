@@ -16,7 +16,6 @@ install:
 - bower install
 script:
 - npm test
-- npm deploy
 before_deploy:
 - npm build
 deploy:
