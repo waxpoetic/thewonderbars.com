@@ -16,6 +16,9 @@ install:
 - bower install
 script:
 - npm test
+- npm deploy
+before_deploy:
+- npm build
 deploy:
   provider: s3
   access_key_id: AKIAJ5ZO3H5WVLLW7MMA
