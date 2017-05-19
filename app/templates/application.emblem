@@ -1,12 +1,13 @@
 header.top-bar
-  .top-bar__logo
-    = link-to 'index'
-      img src="wonderbars.jpg" alt="The Wonder Bars" height="100" width="100"
+  .top-bar__spacer
+    | &nbsp;
   .top-bar__navigation
     nav.navigation
       = link-to 'Music' 'music' class="navigation__link"
       = link-to 'Video' 'video' class="navigation__link"
       = link-to 'Live'  'tour'  class="navigation__link"
       = link-to 'About' 'about' class="navigation__link"
+  .top-bar__spacer
+    | &nbsp;
 main.content
   = liquid-outlet

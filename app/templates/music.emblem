@@ -2,8 +2,14 @@
   section.page__title
     h1 Our Music
   section.music__songs
-    each model as |song|
-      .song
-        p= song.name
-        audio controls="controls"
-          source src="#{song.preview}"
+    p Our debut album is available now!
+  section.debut-album
+    .debut-album__exclusive
+      h2
+        | Exclusively on...
+      h2
+        a href="http://www.junodownload.com/products/the-wonder-bars/3422136-02/"
+          | JunoDownload
+        span &nbsp; &bull; &nbsp;
+        a href="https://www.traxsource.com/title/801162/the-wonder-bars"
+          | Traxsource

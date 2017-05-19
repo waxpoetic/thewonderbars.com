@@ -1,9 +1,15 @@
 .page.home-page
-  .slideshow
-    slick-slider autoplay=true autoplaySpeed=5000 dots=true infinite=true speed=500 fade=true cssEase='linear'
-      each model as |image|
-        if image.caption
-          slideshow-image src=image.file
-            h1 image.caption
-        else
-          slideshow-image src=image.file
+  .debut-album
+    .debut-album__cover
+      img src="album-cover.jpg" alt="Debut Album"
+    .debut-album__title
+      h1 Debut Album Available Now!
+    .debut-album__exclusive
+      h2
+        | Exclusively on...
+      h2
+        a href="http://www.junodownload.com/products/the-wonder-bars/3422136-02/"
+          | JunoDownload
+        span &nbsp; &bull; &nbsp;
+        a href="https://www.traxsource.com/title/801162/the-wonder-bars"
+          | Traxsource
