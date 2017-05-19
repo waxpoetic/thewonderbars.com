@@ -30,3 +30,10 @@ deploy:
   on:
     repo: waxpoetic/thewonderbars.com
     branch: master
+after_deploy:
+- aws configure set preview.cloudfront true
+- aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID
+  --paths "/*"
+env:
+  global:
+    secure: ORINjMi68EaZ1lTlknHpQKAwW9byhzLJGSGqm2dvNSELjoOE+0Cv9lfAXagVMVDno7heNnJ4MXSdh+784yyoSYKFIst9leXAQ6WwrLuqayhqVxIacwQJLWHMjEunL/mUSj2DYZVKJ4TdNSphvGcYa3h2+vjDdHQFK9GRrGPDyhJiudIWU+GsQ3XVX2zGmB9qkK2TQwh6+XkMnsOivLkcrPmVtJ1PujA52RwxQxS/58+WauqU35q4L/WP80IQ511cl5jpOgSTSd8Scx8eH3C9RwJy8wUi3gLxvHkyQL9t55y384Jx3xoKE3bF3+0DsXmNCnPuhzX4xIHMz4RWrq1/pVDLvqs/hpAAeitiZGkJph2PnT7vhsHOn60/MfCN1+lJhIbwJDQKJmkiDbrsNAH4z9CcgWm4MgIYqtqKACr0Kn655UI0XWRYyq3zm+2edsImRWvMiTBcUEjb8y0HlEnihUWUUULYPtgbkoEsmlC9UynZBCe9KPcJNBlBS22dCsdfeUs+ZpjNO2RvIufQJtopZvoJhB2wPqBHAkVgN3g06twJeqyHLjGCFiT/rydg/s6wb5CHAHY4JIVaBIANrhPznEbq+HfyyWTeE9tG0Og7RHXKY3r9OlnZqC+XwH1QRNZYdJwrmnSeHZ5dN5hMo13LIVYsbq2yWHieqtV8drcJ9MY=
