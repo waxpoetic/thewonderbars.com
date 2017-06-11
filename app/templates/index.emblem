@@ -1,7 +1,5 @@
 .page.home-page
   .debut-album
-    .debut-album__cover
-      img src="album-cover.jpg" alt="Debut Album"
     .debut-album__title
       h1 Debut Album Available Now!
     .debut-album__exclusive
